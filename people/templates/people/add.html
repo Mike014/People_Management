@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Add Person </title>
+</head>
+<body>
+    <h1> Add Person </h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="surname" placeholder="Surname" required>
+        <button type="submit"> Add </button>
+    </form>
+    <a href="{% url 'people_list' %}"> List Person </a>
+    <a href="{% url 'logout' %}"> Logout </a>
+</body>
+</html>
+
