@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ef)7ncfs2)7*bjdfr*&^tm2q$t#s1j+jo1bjxs=(nb1&%=n!xd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['people-management-ygpe.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -126,4 +126,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'people_list'
 LOGOUT_REDIRECT_URL = 'login'
-
